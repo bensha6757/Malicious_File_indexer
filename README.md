@@ -19,7 +19,10 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
  
  A class in charge of extracting file paths from the MFT table and parse it. Making use of analyzeMFT package.
  
+ =============
+ 
  operating EXAMPLE:
+ 
   (Operator) >> jpeg [Enter]
   
   (Output) 192.168.10.1 ,08:00:00 c:\pictures\mom.jpeg
