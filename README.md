@@ -5,17 +5,17 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
 # Explanation of the files:
 
  Malware.py:
- a class in charge of retrieving the Master File Table (MFT) record for an NTFS file system
+ A class in charge of retrieving the Master File Table (MFT) record for an NTFS file system
  and send it off to the attack server over TCP in a compressed manner.
- serves as an initial stage for the upcoming ransomware
+ Serves as an initial stage for the upcoming ransomware
  
  CnCServer.py:
  Command and Control Server. a class in charge of operating a server, which waits for the MFT data from the malware and every newly arrived MFT,
  it will map, according to the users input of desired file extensions, the paths of files, which correspond to the desired file extension.
- prints to the log the src IP, a timestamp and a full file path
+ Prints to the log the src IP, a timestamp and a full file path.
  
  MFTFieldsExtractor.py:
- a class in charge of extracting file paths from the MFT table and parse it. making use of analyzeMFT package.
+ A class in charge of extracting file paths from the MFT table and parse it. Making use of analyzeMFT package.
  
  operating EXAMPLE:
   (Operator) >> jpeg [Enter]
@@ -27,13 +27,13 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
   192.168.10.1 ,08:01:01 c:\users\alex\downloads\recipe.docx
 
  #  Run Instructions
-  the code is written in python 2.7, so please use python 2.7 interpreter in order to run it.
+  The code is written in python 2.7, so please use python 2.7 interpreter in order to run it.
   
   ========
   
-  please install the following library:
+  Please install the following library:
   analyzeMFT
-  installation methods:
+  Installation methods:
       pip install analyzeMFT
       Alternatively:
       git clone https://github.com/dkovar/analyzeMFT.git
@@ -41,7 +41,7 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
   
   ========
   
-  in order to run the project, you will have to run the CnCServer.py first, and then Malware.py
-  running CnCServer.py will activate the Command and Control Server, which will wait for the Malware.py to send it the compressed MFT file.
-  after the Malware.py finishes to run, you will have to enter the desired file extension, and the magic will happen.
-  the CnCServer.py will stay running waiting for more requests.
+  In order to run the project, you will have to run the CnCServer.py first, and then Malware.py .
+  Running CnCServer.py will activate the Command and Control Server, which will wait for the Malware.py to send it the compressed MFT file.
+  After the Malware.py finishes to run, you will have to enter the desired file extension, and the magic will happen.
+  The CnCServer.py will stay running waiting for more requests.
