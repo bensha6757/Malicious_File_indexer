@@ -10,19 +10,23 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
  Serves as an initial stage for the upcoming ransomware
  
  CnCServer.py:
+ 
  Command and Control Server. a class in charge of operating a server, which waits for the MFT data from the malware and every newly arrived MFT,
  it will map, according to the users input of desired file extensions, the paths of files, which correspond to the desired file extension.
  Prints to the log the src IP, a timestamp and a full file path.
  
  MFTFieldsExtractor.py:
+ 
  A class in charge of extracting file paths from the MFT table and parse it. Making use of analyzeMFT package.
  
  operating EXAMPLE:
   (Operator) >> jpeg [Enter]
+  
   (Output) 192.168.10.1 ,08:00:00 c:\pictures\mom.jpeg
   192.168.10.1 ,08:00:02 c:\pictures\vacation.jpeg
   
   (Operator) >> docx [Enter]
+  
   (Output) 192.168.10.1 ,08:01:00 c:\users\alex\documents\cv.docx
   192.168.10.1 ,08:01:01 c:\users\alex\downloads\recipe.docx
 
