@@ -79,7 +79,7 @@ def create_socket():
 if __name__ == '__main__':
     while True:
         s = CnCServer(TCP_IP, TCP_PORT, create_socket())
-        print("\nWaiting for a connection to the server...")
+        print("\nWaiting for incoming connections...")
         mft_dir, address = s.server_receiveMFT()
 
         # read the desired file extension from the user
