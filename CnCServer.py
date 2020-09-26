@@ -3,13 +3,13 @@ import zipfile
 from MFTFieldsExtractor import MFTFieldsExtractor
 
 """
-*************************************************************************
- CnCServer - a class in charge of operating a server, which waits for 
- the MFT data from the malware and every newly arrived MFT,
- it will map, according to the users input of desired file extensions, 
- the paths of files, which correspond to the desired file extension.
- prints to the log the src IP, a timestamp and a full file path
-*************************************************************************
+****************************************************************************************
+ CnCServer - Command and Control Server. a class in charge of operating a server,
+ which waits for the MFT data from the malware and every newly arrived MFT, it will map,
+ according to the users input of desired file extensions, the paths of files,
+ which correspond to the desired file extension.
+ Prints to the log, for each file the src IP, a timestamp and a full file path.
+***************************************************************************************
 """
 
 # constant TCP values
