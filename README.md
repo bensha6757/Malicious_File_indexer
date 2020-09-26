@@ -2,7 +2,7 @@
 
 Malicious_File_indexer project is the brain behind the next-get ransomware. Instead of encrypting everything on the hard drive, you will only encrypt business-valuable files (it is up to the malicious actor to decide). To do so, you need a way to efficiently target import files. For some organizations valuable files will be word documents (.docx), for some hi-res pictures (.png) and for others their code base (.cs, .cpp, .java, …).
 
-# Explanation of the files:
+# Files Description:
 
  Malware.py:
  
