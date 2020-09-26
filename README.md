@@ -21,16 +21,19 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
  
  =============
  
- operating EXAMPLE:
+ operating Example:
+ 
  
   (Operator) >> jpeg [Enter]
   
   (Output) 192.168.10.1 ,08:00:00 c:\pictures\mom.jpeg
+  
   192.168.10.1 ,08:00:02 c:\pictures\vacation.jpeg
   
   (Operator) >> docx [Enter]
   
   (Output) 192.168.10.1 ,08:01:00 c:\users\alex\documents\cv.docx
+  
   192.168.10.1 ,08:01:01 c:\users\alex\downloads\recipe.docx
 
  #  Run Instructions
@@ -39,11 +42,17 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
   ========
   
   Please install the following library:
+  
   analyzeMFT
+  
   Installation methods:
+  
       pip install analyzeMFT
+      
       Alternatively:
+      
       git clone https://github.com/dkovar/analyzeMFT.git
+      
       or download it from here: https://pypi.org/project/analyzeMFT 
   
   ========
