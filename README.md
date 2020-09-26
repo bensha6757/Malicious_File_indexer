@@ -30,6 +30,7 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
   the code is written in python 2.7, so please use python 2.7 interpreter in order to run it.
   
   ========
+  
   please install the following library:
   analyzeMFT
   installation methods:
@@ -39,6 +40,7 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
       or download it from here: https://pypi.org/project/analyzeMFT 
   
   ========
+  
   in order to run the project, you will have to run the CnCServer.py first, and then Malware.py
   running CnCServer.py will activate the Command and Control Server, which will wait for the Malware.py to send it the compressed MFT file.
   after the Malware.py finishes to run, you will have to enter the desired file extension, and the magic will happen.
