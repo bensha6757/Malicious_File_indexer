@@ -4,6 +4,8 @@ Malicious_File_indexer project is the brain behind the next-get ransomware. Inst
 To do so, we need a way to efficiently target import files.
 For some organizations valuable files will be word documents (.docx), for some hi-res pictures (.png) and for others their code base (.cs, .cpp, .java, …).
 
+Disclaimer - the code was written for study purposes only, and must not be used for malicious purpuses.
+
 # Files Description:
 
  Malware.py:
